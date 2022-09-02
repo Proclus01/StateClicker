@@ -1,10 +1,9 @@
 import './App.css';
+import StatefulClick from './StatefulClick';
 
 function App() {
   return (
-    <div className="App">
-      <p>Hello!</p>
-    </div>
+    <StatefulClick />
   );
 }
 

@@ -25,15 +25,26 @@ class StatefulClick extends Component {
 
     makeButton() {
         return (
-            <button>Random Number</button>
+            <button onClick={this.handleClick}>
+                Random Number
+            </button>
         );
     }
 
-    winningButton() {
+    winningNotification() {
         return (
             <h2>
                 YOU WIN!
             </h2>
+        );
+    }
+
+    render() {
+        return (
+            <div>
+                {this.makeTitle()}
+                {this.state.number === 7 ? this.winningNotification() : this.makeButton()}
+            </div>
         );
     }
 }
