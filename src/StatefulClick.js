@@ -41,7 +41,7 @@ class StatefulClick extends Component {
 
     render() {
         return (
-            <div>
+            <div style={{textAlign: "center"}} >
                 {this.makeTitle()}
                 {this.state.number === 7 ? this.winningNotification() : this.makeButton()}
             </div>
