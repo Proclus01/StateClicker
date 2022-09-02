@@ -3,7 +3,9 @@ import StatefulClick from './StatefulClick';
 
 function App() {
   return (
-    <StatefulClick />
+    <div className="App">
+      <StatefulClick />
+    </div>
   );
 }
 
